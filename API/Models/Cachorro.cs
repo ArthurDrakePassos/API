@@ -15,7 +15,7 @@ namespace API.Models
         public string NomeCachorro { get; set; }
         public int Idade { get; set; }
         public string Raca { get; set; }
-        public double Pesoa { get; set; }
+        public double Peso { get; set; }
         public double Tamanho { get; set; }
         public string Doenca { get; set; }
         public string Sexo { get; set; }

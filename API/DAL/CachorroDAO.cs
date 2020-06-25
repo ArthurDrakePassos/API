@@ -46,7 +46,7 @@ namespace API.DAL
             c.NomeCachorro = cachorro.NomeCachorro;
             c.Idade = cachorro.Idade;
             c.Raca = cachorro.Raca;
-            c.Pesoa = cachorro.Pesoa;
+            c.Peso = cachorro.Peso;
             c.Tamanho = cachorro.Tamanho;
             c.Doenca = cachorro.Doenca;
             c.Sexo = cachorro.Sexo;

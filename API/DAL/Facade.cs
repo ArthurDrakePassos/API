@@ -12,9 +12,20 @@ namespace API.DAL
             int valida = DAL.UsuarioDAO.ValidaLogin(login, senha);
             int padaces = DAL.UsuarioDAO.RetornarPadAcessPorId(login);
 
-            string concat = Convert.ToString(valida) + "/" + Convert.ToString(padaces);
+            string retorno = "";
+            if (valida != 0 && padaces == 0)
+            {
+                retorno = "mainuser.php";
+            }else if(valida != 0 && padaces == 1)
+            {
+                retorno = "mainadmin.php";
+            }
+            else
+            {
+                retorno = "login.php";
+            }
 
-            return concat;
+            return retorno;
         }
 
     }

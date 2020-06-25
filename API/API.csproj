@@ -182,6 +182,14 @@
     <Compile Include="Migrations\202006232321513_CriarBanco.designer.cs">
       <DependentUpon>202006232321513_CriarBanco.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\202006250330514_AtualizarBanco.cs" />
+    <Compile Include="Migrations\202006250330514_AtualizarBanco.designer.cs">
+      <DependentUpon>202006250330514_AtualizarBanco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\202006251249074_attBanco.cs" />
+    <Compile Include="Migrations\202006251249074_attBanco.designer.cs">
+      <DependentUpon>202006251249074_attBanco.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\Cachorro.cs" />
     <Compile Include="Models\Clinica.cs" />
@@ -278,6 +286,12 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\202006232321513_CriarBanco.resx">
       <DependentUpon>202006232321513_CriarBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006250330514_AtualizarBanco.resx">
+      <DependentUpon>202006250330514_AtualizarBanco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\202006251249074_attBanco.resx">
+      <DependentUpon>202006251249074_attBanco.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
