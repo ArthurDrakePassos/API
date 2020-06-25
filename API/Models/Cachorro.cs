@@ -21,6 +21,7 @@ namespace API.Models
         public string Sexo { get; set; }
         public string Cor { get; set; }
         public string TipoSanguineo { get; set; }
+        public int IdUsuario { get; set; }
 
     }
 }

@@ -22,6 +22,11 @@ namespace API.DAL
             return ctx.Cachorro;
         }
 
+        public static IQueryable<Cachorro> RetornarCachorroPorIdUsuario(int idUsuario)
+        {
+            return ctx.Cachorro.Where(x => x.IdUsuario == idUsuario);
+        }
+
         public static Cachorro RetornarCachorroPorId(int id)
         {
             return ctx.Cachorro.Find(id);

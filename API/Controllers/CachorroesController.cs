@@ -25,9 +25,9 @@ namespace API.Controllers
 
         // GET: api/Cachorroes/5
         [ResponseType(typeof(Cachorro))]
-        public Cachorro GetCachorro(int id)
+        public IQueryable<Cachorro> GetCachorro(int idUsuario)
         {
-            return CachorroDAO.RetornarCachorroPorId(id);
+            return CachorroDAO.RetornarCachorroPorIdUsuario(idUsuario);
         }
 
         [HttpPut]

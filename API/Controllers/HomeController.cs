@@ -17,15 +17,9 @@ namespace API.Controllers
         }
 
         [HttpPost]
-        public int ValidaLogin(string login, string senha)
+        public string ValidaLogin(string login, string senha)
         {
             return Facade.ValidaLogin(login, senha);
-        }
-
-        [HttpPost]
-        public int RetornarPadAcess(string login)
-        {
-            return Facade.RetornarPadAcess(login);
         }
     }
 }
